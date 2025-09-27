@@ -1,0 +1,170 @@
+<!-- Dokumen HTML5 -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Encoding karakter agar teks tampil benar -->
+  <meta charset="UTF-8">
+  <!-- Supaya layout responsif di perangkat mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Judul tab browser -->
+  <title>Portfolio Pemula - maulna akbar</title>
+  <!-- Deskripsi singkat halaman untuk SEO -->
+  <meta name="description" content="Template portfolio sederhana untuk pemula. Edit teks, gambar, dan link saja.">
+  <!-- Optimasi koneksi font (sedikit mempercepat pemuatan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font utama yang digunakan pada halaman -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Menghubungkan file CSS utama -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ikon kecil pada tab browser (opsional) -->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo/brand. EDIT: ganti teks sesuai nama kamu -->
+      <a class="logo" href="#home">maulna akbar</a>
+      <!-- Navigasi utama menuju bagian di halaman yang sama -->
+      <nav class="nav" id="nav">
+        <a href="#home">Beranda</a> <!-- Link ke bagian Hero -->
+        <a href="#about">Tentang</a> <!-- Link ke bagian Tentang -->
+        <a href="#projects">Proyek</a> <!-- Link ke bagian Proyek -->
+        <a href="#contact">Kontak</a> <!-- Link ke bagian Kontak -->
+      </nav>
+      <!-- Tombol menu hamburger untuk layar kecil -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO / HOME ===== -->
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <!-- EDIT: Ganti nama, jabatan, dan deskripsi di bawah ini -->
+        <h1>Halo, saya <span class="accent">maulana akbar</span></h1>
+        <h2>Front-End Developer Pemula</h2>
+        <p>Saya suka membangun website sederhana, rapi, dan responsif. Ini adalah template portfolio pemula. Cukup ganti teks, gambar, dan link sesuai kebutuhan kamu.</p>
+        <div class="hero-cta">
+          <!-- EDIT: Ganti link CV dan email -->
+          <a class="btn primary" href="#projects">Lihat Proyek</a> <!-- Tombol menuju daftar proyek -->
+          <a class="btn outline" href="mailto:emailkamu@example.com">Hubungi Saya</a> <!-- Buka email -->
+        </div>
+      </div>
+      <div class="hero-photo">
+        <!-- EDIT: Ganti src gambar profil -->
+        <img src="foto.png" alt="Foto Profil">
+    
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <!-- Judul bagian Tentang -->
+      <h3 class="section-title">Tentang Saya</h3>
+      <!-- EDIT: Ganti paragraf profil singkat -->
+      <p>saya suka pembelajaran tentang coding,</p>
+
+      <div class="about-grid">
+        <div>
+          <!-- Daftar skill utama -->
+          <h4>Keahlian</h4>
+          <!-- EDIT: Tambah/kurangi skill -->
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li>
+          </ul>
+        </div>
+        <div>
+          <!-- Tools yang biasa digunakan -->
+          <h4>Alat</h4>
+          <!-- EDIT: Tambah/kurangi tools -->
+          <ul class="tags">
+            <li>VS Code</li><li>Git</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <!-- Judul bagian Proyek -->
+      <h3 class="section-title">Proyek</h3>
+      <div class="projects-grid">
+        <!-- EDIT: Duplikasi kartu ini untuk menambah proyek -->
+        <article class="card">
+          <!-- Gambar thumbnail proyek -->
+          <img src="jam tangan.jpg" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>jam tangan</h4>
+            <p>Akses cepat: Melihat waktu di pergelangan tangan jauh lebih mudah dan praktis dibandingkan harus mengeluarkan ponsel dari saku atau tas..</p>
+            <div class="card-actions">
+              <!-- EDIT: Ganti link demo dan kode -->
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="data:image/jpeg;base64,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" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>handphone</h4>
+            <p>Deskripsi singkat proyek. Jelaskan peran kamu dan hasilnya.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>Judul Proyek 3</h4>
+            <p>Deskripsi singkat proyek. Singgung fitur utama yang menarik.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <!-- Judul bagian Kontak -->
+      <h3 class="section-title">Kontak</h3>
+      <p>Ingin berdiskusi atau kolaborasi? Silakan hubungi saya melalui:</p>
+
+      <div class="socials">
+        <!-- EDIT: Ganti link ikon di bawah ini -->
+        <a aria-label="Email" href="mailto:emailkamu@example.com">✉️</a> <!-- Kirim email langsung -->
+        <a aria-label="GitHub" href="https://github.com/username" target="_blank" rel="noopener">🐙</a> <!-- Kunjungi profil GitHub -->
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/username" target="_blank" rel="noopener">in</a> <!-- Kunjungi profil LinkedIn -->
+        <a aria-label="Instagram" href="https://instagram.com/username" target="_blank" rel="noopener">📷</a> <!-- Kunjungi profil Instagram -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Tahun diisi otomatis oleh JavaScript -->
+      <p>© <span id="year"></span> Nama Kamu. Dibuat dengan HTML • CSS • JS.</p>
+    </div>
+  </footer>
+
+  <!-- Menghubungkan file JavaScript untuk interaksi -->
+  <script src="script.js"></script>
+</body>
+</html>
+
